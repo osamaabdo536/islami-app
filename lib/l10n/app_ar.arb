@@ -7,5 +7,12 @@
 "sura_name" : "اسم السورة",
 "hadeth_name" : "اسم الحديث",
 "quran_radio" : "اذاعة القران",
-"number_of_tasbeh" : "عدد التسبيحات"
+"number_of_tasbeh" : "عدد التسبيحات",
+"settinges" : "الاعدادات",
+"english" : "الانجليزية",
+"arabic" : "العربية",
+"light" : "مضيء",
+"dark" : "ليلي",
+"theme" : "النمط",
+"language" : "اللغة"
 }

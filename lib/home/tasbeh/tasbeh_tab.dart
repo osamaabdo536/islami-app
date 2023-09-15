@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_islami_app/my_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/app_config_provider.dart';
 
 class TasbehTab extends StatefulWidget {
   @override
@@ -20,6 +23,7 @@ class _TasbehTabState extends State<TasbehTab> {
   int index = 0;
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<AppConfigProvider>(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,7 +45,11 @@ class _TasbehTabState extends State<TasbehTab> {
                   }
                 });
               },
-                child: Image.asset('assets/images/sebha_logo.png'
+                child: Image.asset('assets/images/sebha_logo.png',
+                  color: provider.isDarkMode() ?
+                  MyTheme.yellowColor
+                      :
+                  Colors.brown
                 ),
             ),
           ),
@@ -52,7 +60,10 @@ class _TasbehTabState extends State<TasbehTab> {
             width: 60,
             height: 70,
             decoration: BoxDecoration(
-              color: MyTheme.primaryLight,
+              color: provider.isDarkMode() ?
+              MyTheme.primaryDark
+                  :
+              MyTheme.primaryLight,
               borderRadius: BorderRadius.circular(20),
           ),
             child: Center(
@@ -63,7 +74,10 @@ class _TasbehTabState extends State<TasbehTab> {
           ),
           Container(
             decoration: BoxDecoration(
-              color: MyTheme.primaryLight,
+              color: provider.isDarkMode() ?
+              MyTheme.yellowColor
+                  :
+              MyTheme.primaryLight,
               borderRadius: BorderRadius.circular(20)
             ),
             child: Text('  ${names[index]}  ' ,
