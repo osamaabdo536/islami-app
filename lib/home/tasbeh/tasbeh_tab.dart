@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_islami_app/my_theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class TasbehTab extends StatefulWidget {
   @override
@@ -44,7 +45,7 @@ class _TasbehTabState extends State<TasbehTab> {
                 ),
             ),
           ),
-          Text('عدد التسبيحات' ,
+          Text(AppLocalizations.of(context)!.number_of_tasbeh ,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           Container(
