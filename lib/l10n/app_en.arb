@@ -7,5 +7,12 @@
 "sura_name" : "Sura Name",
 "hadeth_name" : "Hadeth Name",
 "quran_radio" : "Quran Radio",
-"number_of_tasbeh" : "Number Of Tasbeh"
+"number_of_tasbeh" : "Number of Tasbeh",
+"settinges" : "Settinges",
+"english" : "English",
+"arabic" : "Arabic",
+"light" : "Light",
+"dark" : "Dark",
+"theme" : "Theme",
+"language" : "Language"
 }
